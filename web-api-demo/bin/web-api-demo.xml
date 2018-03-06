@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>web-api-demo</name>
+    </assembly>
+    <members>
+        <member name="M:web_api_demo.Controllers.ProductsController.GetAllProducts">
+            <summary>
+            Get all product
+            </summary>
+            <remarks>
+            Get all product
+            </remarks>
+            <returns></returns>
+            <response code="200"></response>
+        </member>
+        <member name="M:web_api_demo.Controllers.ProductsController.GetProduct(System.Int32)">
+            <summary>
+            Get single product
+            </summary>
+            <remarks>
+            Get single product
+            </remarks>
+            <param name="id"></param>
+            <returns>Product</returns>
+            <response code="200"></response>
+        </member>
+        <member name="T:web_api_demo.Models.Product">
+            <summary>
+            Product
+            </summary>
+        </member>
+        <member name="P:web_api_demo.Models.Product.Id">
+            <summary>
+            Product Id
+            </summary>
+        </member>
+        <member name="P:web_api_demo.Models.Product.Name">
+            <summary>
+            Product Name
+            </summary>
+        </member>
+        <member name="P:web_api_demo.Models.Product.Category">
+            <summary>
+            Product Category
+            </summary>
+        </member>
+        <member name="P:web_api_demo.Models.Product.Price">
+            <summary>
+            Product Price
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -37,7 +37,7 @@ namespace web_api_demo
                 // In production mode set AllowInsecureHttp = false
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/api/auth/Token"), // Get token path
-                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(1),
+                AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
                 Provider = new ApplicationOAuthProvider(PublicClientId),
                 //AuthorizeEndpointPath = new PathString("/api/Account/ExternalLogin")
             };
@@ -45,6 +45,7 @@ namespace web_api_demo
 
             app.UseOAuthAuthorizationServer(OAuthOptions);
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
+            //app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
 
             // Enable the application to use bearer tokens to authenticate users
             // app.UseOAuthBearerTokens(OAuthOptions);

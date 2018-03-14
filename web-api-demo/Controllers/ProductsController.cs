@@ -7,10 +7,12 @@ using web_api_demo.Models;
 using web_api_demo.Filter.ActionFilter;
 using web_api_demo.Filter.Authorize;
 using Microsoft.AspNet.Identity;
+using System.Web.Http.Cors;
 
 namespace web_api_demo.Controllers
 {
     [RoutePrefix("api/products")]
+    //[EnableCors(origins: "http://mywebclient.azurewebsites.net", headers: "*", methods: "PUT")]
     public class ProductsController : ApiController
     {
 
@@ -31,6 +33,7 @@ namespace web_api_demo.Controllers
         /// <response code="200"></response>
 
         [Authorize]
+        [Route("")]
         [ResponseType(typeof(IEnumerable<Product>))]
         public IHttpActionResult GetAllProducts()
         {

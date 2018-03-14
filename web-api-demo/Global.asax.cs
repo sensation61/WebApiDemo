@@ -7,6 +7,7 @@ namespace web_api_demo
     {
         protected void Application_Start()
         {
+            //WebApiConfig.Register(GlobalConfiguration.Configuration);
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }

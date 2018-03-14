@@ -14,7 +14,7 @@ namespace web_api_demo.Filter.ActionFilter
             
             Debug.WriteLine("ACTION 1 DEBUG pre-processing logging");
 
-            //base.OnActionExecuting(actionContext);
+            base.OnActionExecuting(actionContext);
         }
 
         public override void OnActionExecuted(HttpActionExecutedContext actionExecutedContext)
@@ -24,6 +24,9 @@ namespace web_api_demo.Filter.ActionFilter
             var arg = actionExecutedContext.ActionContext.ActionArguments;
             
             Debug.WriteLine("DEBUG  OnActionExecuted Response " + actionExecutedContext?.Response?.StatusCode.ToString());
+
+                       
+            base.OnActionExecuted(actionExecutedContext);
         }
     }
 }

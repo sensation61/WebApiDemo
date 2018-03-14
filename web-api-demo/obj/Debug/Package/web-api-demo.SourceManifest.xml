@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="F:\Workstation\web-api-demo\web-api-demo\obj\Debug\Package\PackageTmp" />
+  <setAcl path="F:\Workstation\web-api-demo\web-api-demo\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="F:\Workstation\web-api-demo\web-api-demo\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>
